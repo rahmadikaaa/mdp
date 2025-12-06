@@ -1,0 +1,197 @@
+{
+  "metadata": {
+    "appName": "Mulya Diesel Pratama",
+    "description": "Layanan sewa forklift premium dan terpercaya.",
+    "language": "id"
+  },
+  "theme": {
+    "colors": {
+      "primary": "#f2f20d",
+      "backgroundDark": "#181811",
+      "surfaceDark": "#21211a",
+      "borderDark": "#373726",
+      "textMain": "#ffffff",
+      "textSecondary": "#b9b99b"
+    },
+    "typography": {
+      "headings": "Space Grotesk",
+      "body": "Inter",
+      "sizes": {
+        "h1": "64px",
+        "h2": "42px",
+        "h3": "28px",
+        "body": "17px"
+      }
+    },
+    "layout": {
+      "maxWidth": "1200px",
+      "borderRadius": "20px"
+    }
+  },
+  "components": {
+    "navbar": {
+      "logo": {
+        "text": "Mulya Diesel",
+        "accent": "Pratama",
+        "icon": "Construction"
+      },
+      "links": [
+        { "label": "Beranda", "url": "#" },
+        { "label": "Layanan", "url": "#services" },
+        { "label": "Tentang", "url": "#about" },
+        { "label": "Hubungi Kami", "url": "#contact" }
+      ],
+      "cta": {
+        "label": "Dapatkan Penawaran",
+        "action": "openModal"
+      }
+    },
+    "hero": {
+      "layout": "split-screen",
+      "content": {
+        "headline": "Sewa Forklift <span class='text-primary'>Cepat & Terpercaya</span>",
+        "subheadline": "Memberikan Solusi Yang Tepat Secara Total dan Berintegrasi Untuk Kebutuhan Operasional Anda",
+        "badges": [
+          "Ready 24 Jam",
+          "Unit Terawat",
+          "Respon Cepat"
+        ],
+        "buttons": [
+          {
+            "label": "Dapatkan Penawaran",
+            "type": "primary",
+            "icon": "ArrowRight"
+          },
+          {
+            "label": "Hubungi Kami",
+            "type": "outline",
+            "icon": "Phone"
+          }
+        ]
+      },
+      "visual": {
+        "image": "https://images.unsplash.com/photo-1595246140625-573b715e11d3?q=80&w=1200&auto=format&fit=crop",
+        "floatingCard": {
+          "title": "Unit Available",
+          "subtitle": "Toyota & Mitsubishi 3-5 Ton",
+          "icon": "CheckCircle2"
+        }
+      }
+    },
+    "services": {
+      "title": "Layanan Penyewaan Forklift",
+      "description": "Kami menyediakan berbagai pilihan sewa forklift untuk mendukung proyek Anda, dari kebutuhan harian hingga kontrak bulanan.",
+      "layout": "grid-4-col",
+      "items": [
+        {
+          "title": "Sewa Harian",
+          "description": "Ideal untuk kebutuhan cepat dan fleksibel, bongkar muat lebih cepat, atau pengganti unit rusak.",
+          "icon": "Clock"
+        },
+        {
+          "title": "Sewa Mingguan",
+          "description": "Efisien untuk pekerjaan jangka pendek, proyek konstruksi musiman, atau pameran.",
+          "icon": "Calendar"
+        },
+        {
+          "title": "Sewa Bulanan",
+          "description": "Optimal untuk operasional jangka panjang dengan harga lebih hemat dan maintenance rutin.",
+          "icon": "Warehouse"
+        },
+        {
+          "title": "Mobilisasi & Teknisi",
+          "description": "Mobilisasi unit ke lokasi proyek Anda, dengan teknisi ahli yang siap memastikan operasional tetap lancar.",
+          "icon": "Truck"
+        }
+      ]
+    },
+    "featured_products": {
+      "title": "Unit Unggulan",
+      "description": "Temukan pilihan forklift berkualitas kami yang siap mendukung operasional bisnis Anda dengan performa tinggi dan daya tahan teruji.",
+      "cta_text": "Lihat Semua Unit",
+      "items": [
+        {
+          "name": "Forklift 3 Ton",
+          "category": "DIESEL",
+          "specs": ["3 Meter", "4 Meter"]
+        },
+        {
+          "name": "Forklift 5 Ton",
+          "category": "DIESEL",
+          "specs": ["3 Meter", "4.5 Meter", "6 Meter"]
+        },
+        {
+          "name": "Forklift 7 Ton",
+          "category": "DIESEL",
+          "specs": ["3 Meter", "5 Meter"]
+        }
+      ]
+    },
+    "about": {
+      "title": "Tentang Kami",
+      "layout": "split-screen-reversed",
+      "content": [
+        "Mulya Diesel Pratama adalah penyedia Layanan Sewa Forklift profesional untuk mendukung perusahaan anda disektor manufaktur, logistik hingga konstruksi.",
+        "Kami memastikan setiap unit selalu dalam kondisi prima melalui perawatan standar, pengiriman cepat, dan dukungan teknisi berpengalaman."
+      ],
+      "stats": {
+        "value": "10+",
+        "label": "Tahun Pengalaman"
+      },
+      "image": "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=2070&auto=format&fit=crop"
+    },
+    "cta_banner": {
+      "headline": "Siap Mendukung Operasional Anda?",
+      "subheadline": "Hubungi kami untuk konsultasi dan penawaran cepat. Tim kami siap membantu Anda menemukan solusi forklift terbaik.",
+      "button": {
+        "label": "Get A Quote Now",
+        "icon": "ArrowUpRight"
+      },
+      "style": "bg-primary text-dark"
+    },
+    "testimonials": {
+      "title": "Apa Kata Klien Kami",
+      "rating": {
+        "score": 4.8,
+        "max": 5,
+        "count": "400+ Review"
+      },
+      "items": [
+        {
+          "name": "Budi Santoso",
+          "role": "Manager Gudang Logistik",
+          "quote": "Unit sangat terawat dan bersih. Operator yang dikirim juga sangat profesional dan memiliki SIO aktif.",
+          "avatar": "https://i.pravatar.cc/150?u=budi"
+        },
+        {
+          "name": "Sarah Wijaya",
+          "role": "Project Manager Konstruksi",
+          "quote": "Respon admin sangat cepat. Ketika kami butuh unit mendadak jam 11 malam, mereka siap sedia.",
+          "avatar": "https://i.pravatar.cc/150?u=sarah"
+        },
+        {
+          "name": "Hendro Kusuma",
+          "role": "Direktur Operasional",
+          "quote": "Harga sangat kompetitif untuk sewa bulanan. Maintenance rutin membuat kami tidak pusing.",
+          "avatar": "https://i.pravatar.cc/150?u=hendro"
+        }
+      ]
+    },
+    "contact_floating": {
+      "platform": "WhatsApp",
+      "number": "+6287809161298",
+      "tooltip": "Hubungi Kami"
+    },
+    "footer": {
+      "brand": {
+        "description": "Memberikan Solusi Yang Tepat Secara Total dan Berintegrasi Untuk Kebutuhan Operasional Anda",
+        "socials": ["Instagram", "Facebook", "Linkedin"]
+      },
+      "contact_info": {
+        "address": "Kp. Gardu No. 8, Kelurahan Kramat, Kecamatan Pakuhaji, Kabupaten Tangerang, Banten 15570",
+        "phones": ["+62 87809161298", "+62 82312045606"],
+        "email": "mulyadieselforklift@gmail.com"
+      }
+    }
+  }
+}
