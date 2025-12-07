@@ -27,3 +27,40 @@ dist-ssr
 echo "node_modules/" >> .gitignore
 echo "dist/" >> .gitignore
 echo ".env*" >> .gitignore
+
+# Dependencies
+node_modules/
+.pnp.cjs
+.pnp.loader.mjs
+
+# Build output
+dist/
+build/
+*.log
+
+# Local env files
+.env
+.env.*
+!.env.example
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Vercel / Deployment
+.vercel/
+
+# TypeScript build
+*.tsbuildinfo
+
+# Editor configs
+.vscode/
+.idea/
+
+# Optional: Mac/Linux junk
+*.swp
+*.swo
+
+# Optional: generated lock files (jika tidak mau commit)
+# package-lock.json
+# yarn.lock
