@@ -3,7 +3,7 @@ import React from 'react';
 const WhatsAppButton: React.FC = () => {
   return (
     <a
-      href="https://wa.me/6287809161298" // Updated to Mulya Diesel Pratama number
+      href="https://wa.me/087809161298" // Updated to Mulya Diesel Pratama number
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-6 right-6 md:bottom-10 md:right-10 z-50 group flex items-center justify-end"

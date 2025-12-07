@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Construction } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -17,7 +17,7 @@ const Navbar: React.FC = () => {
     { name: 'Beranda', href: '#' },
     { name: 'Layanan', href: '#services' },
     { name: 'Tentang', href: '#about' },
-    { name: 'Hubungi Kami', href: '#contact' },
+    { name: 'Hubungi Kami', href: '#BigCTA' }, // Ini akan mencari id="contact"
   ];
 
   return (
@@ -32,13 +32,18 @@ const Navbar: React.FC = () => {
         
         {/* Logo */}
         <div className="flex items-center gap-2 group cursor-pointer">
-          <div className="p-2 bg-primary rounded text-bgDark group-hover:bg-white transition-colors">
-            <Construction size={24} />
+          <div className="h-7 w-7 bg-primary rounded flex items-center justify-center overflow-hidden">
+            <img
+              src="/images/mulya_diesel.png"
+              alt="Mulya Diesel Pratama"
+              className="max-h-8 max-w-8 object-contain"
+            />
           </div>
           <span className="font-display font-bold text-2xl text-textMain tracking-tight">
             Mulya Diesel<span className="text-primary"> Pratama</span>
           </span>
         </div>
+        
 
         {/* Desktop Menu */}
         <nav className="hidden md:flex items-center gap-8">
@@ -53,11 +58,14 @@ const Navbar: React.FC = () => {
           ))}
         </nav>
 
-        {/* CTA Button */}
+        {/* CTA Button (Diubah jadi <a> agar scroll ke contact) */}
         <div className="hidden md:block">
-          <button className="bg-surfaceDark border border-borderDark text-textMain px-6 py-2 rounded-full text-sm font-semibold hover:border-primary hover:text-primary transition-all">
+          <a 
+            href="#BigCTA"
+            className="bg-surfaceDark border border-borderDark text-textMain px-6 py-2 rounded-full text-sm font-semibold hover:border-primary hover:text-primary transition-all inline-block"
+          >
             Dapatkan Penawaran
-          </button>
+          </a>
         </div>
 
         {/* Mobile Toggle */}
@@ -82,9 +90,14 @@ const Navbar: React.FC = () => {
               {link.name}
             </a>
           ))}
-           <button className="w-full bg-primary text-bgDark px-6 py-3 rounded-lg font-bold mt-2">
+           {/* Tombol Mobile juga diarahkan ke #contact */}
+           <a 
+             href="#contact"
+             className="w-full bg-primary text-bgDark px-6 py-3 rounded-lg font-bold mt-2 text-center block"
+             onClick={() => setIsMobileMenuOpen(false)}
+           >
             Dapatkan Penawaran
-          </button>
+          </a>
         </div>
       )}
     </header>
