@@ -11,7 +11,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         // Kita jadikan index.tsx sebagai entry point utama
-        main: '/src/main.tsx', 
+        main: 'src/main.tsx', 
       },
       output: {
         // Memaksa nama file output menjadi tetap (tidak di-hash) agar mudah dipanggil di PHP
