@@ -1,4 +1,5 @@
 import React from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Services from './components/Services';
@@ -23,6 +24,7 @@ const App: React.FC = () => {
       </main>
       <Footer />
       <WhatsAppButton />
+      <Analytics />
     </div>
   );
 };
